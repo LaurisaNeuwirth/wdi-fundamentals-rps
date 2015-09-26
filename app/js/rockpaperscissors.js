@@ -83,7 +83,7 @@ function getWinner(playerMove,computerMove) {
 }
 
 function playToFive() {
-    console.log("Let's play Rock, Paper, Scissors");
+    console.log("Time to play Rock, Paper, Scissors");
     
     var playerWins = 0;
     var computerWins = 0;
@@ -103,10 +103,10 @@ while(playerWins < 5 && computerWins < 5) {
          computerWins = computerWins + 0;
          playerWins = playerWins + 0;
     }
-     console.log("Player plays", playerMove,": Computer plays", computerMove);
-     console.log("The winner is", getWinner(playerMove, computerMove));   
+     console.log("Player chose ", playerMove," while Computer chose ", computerMove);
+     console.log("The winner this round is ", getWinner(playerMove, computerMove));   
     } 
-     return ["player score count", playerWins, "computer score count", computerWins];
+     return ["Player has won ", playerWins, "and Computer has won ", computerWins];
 }
 
 playToFive();
